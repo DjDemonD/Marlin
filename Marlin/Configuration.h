@@ -682,10 +682,10 @@
 #define XY_PROBE_SPEED 4000
 
 // Speed for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_SPEED_FAST 300
+#define Z_PROBE_SPEED_FAST 400
 
 // Speed for the "accurate" probe of each point
-#define Z_PROBE_SPEED_SLOW 300
+#define Z_PROBE_SPEED_SLOW 400
 
 // The number of probes to perform at each point.
 //   Set to 2 for a fast/slow probe, using the second probe result.
@@ -1022,7 +1022,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
@@ -1031,7 +1031,7 @@
 
 // Homing speeds (mm/m)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  300
+#define HOMING_FEEDRATE_Z  400
 
 // @section calibrate
 
