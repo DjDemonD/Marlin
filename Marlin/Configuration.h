@@ -354,11 +354,11 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  //stock CR10 hotend
+  //stock CR10 hotend - tuned by Precision Piezo on CR10 300 Stock
   
- #define  DEFAULT_Kp 17.42
-  #define  DEFAULT_Ki 1.27
-  #define  DEFAULT_Kd 59.93
+#define  DEFAULT_Kp 10.71
+#define  DEFAULT_Ki 0.77
+#define  DEFAULT_Kd 37.30
 
 #endif // PIDTEMP
 
